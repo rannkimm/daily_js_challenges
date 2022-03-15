@@ -102,10 +102,9 @@ add(7,-12) //=> -5
 -----------------------------------------------------------------*/
 // Your solution for 04-addList here:
 function addList() {
-  let array = addList.forEach((num, value) => {
+  return addList.reduce((num, value) => {
     return num + value
   })
-  return array
 }
 /*-----------------------------------------------------------------
 Challenge: 05-computeRemainder
