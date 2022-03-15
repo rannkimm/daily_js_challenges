@@ -77,15 +77,11 @@ sumNumbers([]) //=> 0
 -----------------------------------------------------------------*/
 // Your solution for 03-sumNumbers here:
 function sumNumbers(nums) {
-  if (nums === null) {
-    return 0
-  } else {
-    let nums = [null]
-    let sum = 0
-    for (let i = 0; i<nums.length; i++) {
-      return sum += nums[i]
-    }
-  }
+  let sum = 0
+ for(let i = 0; i < nums.length; i++) {
+     sum += nums[i]
+   }
+   return sum
 }
 /*-----------------------------------------------------------------
 Challenge: 04-addList
@@ -106,6 +102,10 @@ add(7,-12) //=> -5
 -----------------------------------------------------------------*/
 // Your solution for 04-addList here:
 function addList() {
+  let array = addList.forEach((num, value) => {
+    return num + value
+  })
+  return array
 }
 /*-----------------------------------------------------------------
 Challenge: 05-computeRemainder
