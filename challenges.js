@@ -102,9 +102,11 @@ add(7,-12) //=> -5
 -----------------------------------------------------------------*/
 // Your solution for 04-addList here:
 function addList() {
-  return addList.reduce((num, value) => {
-    return num + value
-  })
+let sum = 0
+for (let i = 0; i < arguments.length; i++) {
+  sum += arguments[i]
+}
+return sum
 }
 /*-----------------------------------------------------------------
 Challenge: 05-computeRemainder
@@ -125,7 +127,18 @@ computeRemainder(4,0) //=> Infinity
 computeRemainder(10.5, 3) //=> 1.5
 -----------------------------------------------------------------*/
 // Your solution for 05-computeRemainder:
-function computeRemainder(n1, n2) {}
+function computeRemainder(n1, n2) {
+  let remain = Infinity
+  if (n2 === 0) {
+    return remain
+  } else {
+    while (n1 >= n2) {
+      n1-=n2
+    }
+    return n1
+  }
+ 
+}
 /*-----------------------------------------------------------------
 Challenge: 06-range
 
@@ -144,7 +157,9 @@ range(1,1) //=> []
 range(5,2) //=> "First argument must be less than second"
 -----------------------------------------------------------------*/
 // Your solution for 06-range here:
-function range(n1, n2) {}
+function range(n1, n2) {
+  
+}
 /*-----------------------------------------------------------------
 Challenge: 07-reverseUpcaseString
 
