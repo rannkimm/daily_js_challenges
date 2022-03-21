@@ -164,14 +164,11 @@ function range(n1, n2) {
   } else if (n1 === n2) {
     return []
   } else {
-    while(n1< n2) {
-      arr.push().map((n1)=> {
-        n1 +=1
-      })
+    while(n1+1 < n2) {
+      arr.push(n1+=1)
     }
     return arr
   }
-
 
 }
 /*-----------------------------------------------------------------
@@ -188,7 +185,10 @@ Examples:
 reverseUpcaseString("SEI Rocks!"); //=> "!SKCOR IES" 
 -----------------------------------------------------------------*/
 // Your solution for 07-reverseUpcaseString here:
-function reverseUpcaseString(string) {}
+function reverseUpcaseString(string) {
+  return string.split('').reverse().join('').toUpperCase()
+}
+
 /*-----------------------------------------------------------------
 Challenge: 08-removeEnds
 
@@ -205,7 +205,14 @@ removeEnds('SEI Rocks!'); //=> "DI Rocks"
 removeEnds('a'); //=> "" (empty string)
 -----------------------------------------------------------------*/
 // Your solution for 08-removeEnds here:
-function removeEnds(string) {}
+function removeEnds(string) {
+  let arr = string.split('')
+  arr.pop()
+  arr.shift()
+  return arr.join('')
+  
+
+}
 /*-----------------------------------------------------------------
 Challenge: 09-charCount
 
